@@ -1,4 +1,4 @@
-# 🚀 Project Name
+# Get Me a Chai
 
 A platform that lets fans support their favourite creators — like Buy Me a Coffee, but built from scratch.
 
