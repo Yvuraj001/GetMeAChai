@@ -6,128 +6,39 @@ Built with Next.js, MongoDB, and a focus on clean UX. Handles authentication, pa
 
 ---
 
-## 📋 Table of Contents
-
-- [Getting Started](#getting-started)
-- [Environment Setup](#environment-setup)
-- [Installation](#installation)
-- [Running the Project](#running-the-project)
-- [Home Page](#home-page)
+<img width="1470" height="802" alt="image" src="https://github.com/user-attachments/assets/811e6ffb-5d1b-4ef4-accd-f500e8b22604" />
+<img width="1470" height="803" alt="image" src="https://github.com/user-attachments/assets/3f16ab52-1636-4ebe-a64c-8e1ceed30f5a" />
+<img width="1470" height="801" alt="image" src="https://github.com/user-attachments/assets/0c2d1035-a0a2-4612-915e-f537bbcf570b" />
 
 ---
 
-## 🛠️ Getting Started
+## Environment Variables
 
-Follow these steps to set up the project locally on your machine.
+Add a `.env` file with the following:
 
-### Prerequisites
-
-Make sure you have the following installed:
-
-- [Node.js](https://nodejs.org/) (v18 or above)
-- [Git](https://git-scm.com/)
-- A package manager: `npm`, `yarn`, or `pnpm`
-
----
-
-## 🔐 Environment Setup
-
-This project requires environment variables to run correctly.
-
-### Step 1 — Create the `.env.local` file
-
-In the **root directory** of the project, create a file named `.env.local`:
-
-```bash
-touch .env.local
+```dotenv
+GITHUB_ID=
+GITHUB_SECRET=
 ```
 
-### Step 2 — Add the following variables
-
-Open `.env.local` and add the values below:
-
-```env
-# ============================
-# 🔑 GitHub Credentials
-# ============================
-GITHUB_SECRET=your_github_secret_here
-GITHUB_KEY=your_github_key_here
-
-# ============================
-# 🌐 Public URL
-# ============================
-NEXT_PUBLIC_URL=https://your-public-url.com
-
-# ============================
-# 🗄️ Database
-# ============================
-DATABASE_URL=your_database_connection_string_here
-
-# ============================
-# 🏠 Home Page Content
-# ============================
-NEXT_PUBLIC_HOME_TITLE=Welcome to Our Platform
-NEXT_PUBLIC_HOME_SUBTITLE=Your one-stop solution for everything awesome
-NEXT_PUBLIC_HOME_DESCRIPTION=We help you build, ship, and scale faster than ever before.
+```dotenv
+GOOGLE_ID=
+GOOGLE_SECRET=
 ```
 
-> ⚠️ **Never commit `.env.local` to version control.**  
-> Make sure `.env.local` is listed in your `.gitignore` file.
-
----
-
-## 📦 Installation
-
-Clone the repository and install dependencies:
-
-```bash
-# Clone the repo
-git clone https://github.com/your-username/your-repo.git
-
-# Navigate into the project
-cd your-repo
-
-# Install dependencies
-npm install
+```dotenv
+NEXT_PUBLIC_R_KEY=
+R_SECRET=
 ```
 
----
-
-## ▶️ Running the Project
-
-```bash
-# Start the development server
-npm run dev
-
-# Build for production
-npm run build
-
-# Start production server
-npm start
+```dotenv
+NEXTAUTH_SECRET=
 ```
 
-The app will be available at **http://localhost:3000**
+```dotenv
+NEXTAUTH_URL=
+```
 
----
-
- 
-
----
-
-## 🔒 Security Notice
-
-- **Never share** your `.env.local` file publicly.
-- **Rotate** your GitHub secret and keys regularly.
-- Use environment variable managers (like [Doppler](https://www.doppler.com/) or [Vercel Env](https://vercel.com/docs/environment-variables)) for production deployments.
-
----
-
-## 🤝 Contributing
-
-Pull requests are welcome! For major changes, please open an issue first to discuss what you'd like to change.
-
----
-
-## 📄 License
-
-[MIT](LICENSE)
+```dotenv
+NEXT_PUBLIC_URL=
+```
